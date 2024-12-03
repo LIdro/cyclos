@@ -8,14 +8,14 @@
 
 // full day names
 Calendar._DN = new Array
-("NedeÄľa",
+("NedeГ„Дѕa",
  "Pondelok",
  "Utorok",
  "Streda",
- "Ĺ tvrtok",
+ "Д№В tvrtok",
  "Piatok",
  "Sobota",
- "NedeÄľa");
+ "NedeГ„Дѕa");
 
 // short day names
 Calendar._SDN = new Array
@@ -23,23 +23,23 @@ Calendar._SDN = new Array
  "Pon",
  "Uto",
  "Str",
- "Ĺ tv",
+ "Д№В tv",
  "Pia",
  "Sob",
  "Ned");
 
 // full month names
 Calendar._MN = new Array
-("JanuĂˇr",
- "FebruĂˇr",
+("JanuД‚Л‡r",
+ "FebruД‚Л‡r",
  "Marec",
- "AprĂ­l",
- "MĂˇj",
- "JĂşn",
- "JĂşl",
+ "AprД‚В­l",
+ "MД‚Л‡j",
+ "JД‚Еџn",
+ "JД‚Еџl",
  "August",
  "September",
- "OktĂłber",
+ "OktД‚Е‚ber",
  "November",
  "December");
 
@@ -49,9 +49,9 @@ Calendar._SMN = new Array
  "Feb",
  "Mar",
  "Apr",
- "MĂˇj",
- "JĂşn",
- "JĂşl",
+ "MД‚Л‡j",
+ "JД‚Еџn",
+ "JД‚Еџl",
  "Aug",
  "Sep",
  "Okt",
@@ -60,40 +60,40 @@ Calendar._SMN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "O kalendĂˇri";
+Calendar._TT["INFO"] = "O kalendД‚Л‡ri";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
 "(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
-"PoslednĂş verziu nĂˇjdete na: http://www.dynarch.com/projects/calendar/\n" +
-"DistribuovanĂ© pod GNU LGPL.  ViÄŹ http://gnu.org/licenses/lgpl.html pre detaily." +
+"PoslednД‚Еџ verziu nД‚Л‡jdete na: http://www.dynarch.com/projects/calendar/\n" +
+"DistribuovanД‚В© pod GNU LGPL.  ViГ„Е№ http://gnu.org/licenses/lgpl.html pre detaily." +
 "\n\n" +
-"VĂ˝ber dĂˇtumu:\n" +
-"- PouĹľite tlaÄŤidlĂˇ \xab, \xbb pre vĂ˝ber roku\n" +
-"- PouĹľite tlaÄŤidlĂˇ " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " pre vĂ˝ber mesiaca\n" +
-"- Ak ktorĂ©koÄľvek z tĂ˝chto tlaÄŤidiel podrĹľĂ­te dlhĹˇie, zobrazĂ­ sa rĂ˝chly vĂ˝ber.";
+"VД‚Лќber dД‚Л‡tumu:\n" +
+"- PouД№Дѕite tlaГ„Е¤idlД‚Л‡ \xab, \xbb pre vД‚Лќber roku\n" +
+"- PouД№Дѕite tlaГ„Е¤idlД‚Л‡ " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " pre vД‚Лќber mesiaca\n" +
+"- Ak ktorД‚В©koГ„Дѕvek z tД‚Лќchto tlaГ„Е¤idiel podrД№ДѕД‚В­te dlhД№Л‡ie, zobrazД‚В­ sa rД‚Лќchly vД‚Лќber.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
-"VĂ˝ber ÄŤasu:\n" +
-"- Kliknutie na niektorĂş poloĹľku ÄŤasu ju zvĂ˝Ĺˇi\n" +
-"- Shift-klik ju znĂ­Ĺľi\n" +
-"- Ak podrĹľĂ­te tlaÄŤĂ­tko stlaÄŤenĂ©, posĂşvanĂ­m menĂ­te hodnotu.";
+"VД‚Лќber Г„Е¤asu:\n" +
+"- Kliknutie na niektorД‚Еџ poloД№Дѕku Г„Е¤asu ju zvД‚ЛќД№Л‡i\n" +
+"- Shift-klik ju znД‚В­Д№Дѕi\n" +
+"- Ak podrД№ДѕД‚В­te tlaГ„Е¤Д‚В­tko stlaГ„Е¤enД‚В©, posД‚ЕџvanД‚В­m menД‚В­te hodnotu.";
 
-Calendar._TT["PREV_YEAR"] = "PredoĹˇlĂ˝ rok (podrĹľte pre menu)";
-Calendar._TT["PREV_MONTH"] = "PredoĹˇlĂ˝ mesiac (podrĹľte pre menu)";
-Calendar._TT["GO_TODAY"] = "PrejsĹĄ na dneĹˇok";
-Calendar._TT["NEXT_MONTH"] = "Nasl. mesiac (podrĹľte pre menu)";
-Calendar._TT["NEXT_YEAR"] = "Nasl. rok (podrĹľte pre menu)";
-Calendar._TT["SEL_DATE"] = "ZvoÄľte dĂˇtum";
-Calendar._TT["DRAG_TO_MOVE"] = "PodrĹľanĂ­m tlaÄŤĂ­tka zmenĂ­te polohu";
+Calendar._TT["PREV_YEAR"] = "PredoД№Л‡lД‚Лќ rok (podrД№Дѕte pre menu)";
+Calendar._TT["PREV_MONTH"] = "PredoД№Л‡lД‚Лќ mesiac (podrД№Дѕte pre menu)";
+Calendar._TT["GO_TODAY"] = "PrejsД№Д„ na dneД№Л‡ok";
+Calendar._TT["NEXT_MONTH"] = "Nasl. mesiac (podrД№Дѕte pre menu)";
+Calendar._TT["NEXT_YEAR"] = "Nasl. rok (podrД№Дѕte pre menu)";
+Calendar._TT["SEL_DATE"] = "ZvoГ„Дѕte dД‚Л‡tum";
+Calendar._TT["DRAG_TO_MOVE"] = "PodrД№ДѕanД‚В­m tlaГ„Е¤Д‚В­tka zmenД‚В­te polohu";
 Calendar._TT["PART_TODAY"] = " (dnes)";
-Calendar._TT["MON_FIRST"] = "ZobraziĹĄ pondelok ako prvĂ˝";
-Calendar._TT["SUN_FIRST"] = "ZobraziĹĄ nedeÄľu ako prvĂş";
-Calendar._TT["CLOSE"] = "ZavrieĹĄ";
+Calendar._TT["MON_FIRST"] = "ZobraziД№Д„ pondelok ako prvД‚Лќ";
+Calendar._TT["SUN_FIRST"] = "ZobraziД№Д„ nedeГ„Дѕu ako prvД‚Еџ";
+Calendar._TT["CLOSE"] = "ZavrieД№Д„";
 Calendar._TT["TODAY"] = "Dnes";
-Calendar._TT["TIME_PART"] = "(Shift-)klik/ĹĄahanie zmenĂ­ hodnotu";
+Calendar._TT["TIME_PART"] = "(Shift-)klik/Д№Д„ahanie zmenД‚В­ hodnotu";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "$d. %m. %Y";
 Calendar._TT["TT_DATE_FORMAT"] = "%a, %e. %b";
 
-Calendar._TT["WK"] = "tĂ˝Ĺľ";
+Calendar._TT["WK"] = "tД‚ЛќД№Дѕ";

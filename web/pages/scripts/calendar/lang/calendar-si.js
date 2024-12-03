@@ -9,7 +9,7 @@ Calendar._DN = new Array
  "Ponedeljek",
  "Torek",
  "Sreda",
- "Četrtek",
+ "ДЊetrtek",
  "Petek",
  "Sobota",
  "Nedelja");
@@ -19,7 +19,7 @@ Calendar._DN = new Array
  "Pon",
  "Tor",
  "Sre",
- "Čet",
+ "ДЊet",
  "Pet",
  "Sob",
  "Ned");
@@ -66,24 +66,24 @@ Calendar._TT["ABOUT"] =
 "Izbor datuma:\n" +
 "- Uporabite \xab, \xbb gumbe za izbor leta\n" +
 "- Uporabite " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " gumbe za izbor meseca\n" +
-"- Zadržite klik na kateremkoli od zgornjih gumbov za hiter izbor.";
+"- ZadrЕѕite klik na kateremkoli od zgornjih gumbov za hiter izbor.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
-"Izbor ćasa:\n" +
-"- Kliknite na katerikoli del ćasa za poveć. le-tega\n" +
+"Izbor Д‡asa:\n" +
+"- Kliknite na katerikoli del Д‡asa za poveД‡. le-tega\n" +
 "- ali Shift-click za zmanj. le-tega\n" +
 "- ali kliknite in povlecite za hiter izbor.";
 
-Calendar._TT["TOGGLE"] = "Spremeni dan s katerim se prićne teden";
+Calendar._TT["TOGGLE"] = "Spremeni dan s katerim se priД‡ne teden";
 Calendar._TT["PREV_YEAR"] = "Predhodnje leto (dolg klik za meni)";
 Calendar._TT["PREV_MONTH"] = "Predhodnji mesec (dolg klik za meni)";
-Calendar._TT["GO_TODAY"] = "Pojdi na tekoći dan";
+Calendar._TT["GO_TODAY"] = "Pojdi na tekoД‡i dan";
 Calendar._TT["NEXT_MONTH"] = "Naslednji mesec (dolg klik za meni)";
 Calendar._TT["NEXT_YEAR"] = "Naslednje leto (dolg klik za meni)";
 Calendar._TT["SEL_DATE"] = "Izberite datum";
 Calendar._TT["DRAG_TO_MOVE"] = "Pritisni in povleci za spremembo pozicije";
 Calendar._TT["PART_TODAY"] = " (danes)";
-Calendar._TT["MON_FIRST"] = "Prikaži ponedeljek kot prvi dan";
-Calendar._TT["SUN_FIRST"] = "Prikaži nedeljo kot prvi dan";
+Calendar._TT["MON_FIRST"] = "PrikaЕѕi ponedeljek kot prvi dan";
+Calendar._TT["SUN_FIRST"] = "PrikaЕѕi nedeljo kot prvi dan";
 Calendar._TT["CLOSE"] = "Zapri";
 Calendar._TT["TODAY"] = "Danes";
 

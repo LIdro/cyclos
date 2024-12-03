@@ -11,14 +11,14 @@
 	
 // full day names
 Calendar._DN = new Array
-("星期日",
- "星期一",
- "星期二",
- "星期三",
- "星期四",
- "星期五",
- "星期六",
- "星期日");
+("жџжњџж—Ґ",
+ "жџжњџдёЂ",
+ "жџжњџдєЊ",
+ "жџжњџдё‰",
+ "жџжњџе››",
+ "жџжњџдє”",
+ "жџжњџе…­",
+ "жџжњџж—Ґ");
 
 // Please note that the following array of short day names (and the same goes
 // for short month names, _SMN) isn't absolutely necessary.  We give it here
@@ -34,14 +34,14 @@ Calendar._DN = new Array
 
 // short day names
 Calendar._SDN = new Array
-("日",
- "一",
- "二",
- "三",
- "四",
- "五",
- "六",
- "日");
+("ж—Ґ",
+ "дёЂ",
+ "дєЊ",
+ "дё‰",
+ "е››",
+ "дє”",
+ "е…­",
+ "ж—Ґ");
 
 //First day of the week. "0" means display Sunday first, "1" means display
 //Monday first, etc.
@@ -49,37 +49,37 @@ Calendar._FD = 0;
 
 // full month names
 Calendar._MN = new Array
-("一月",
- "二月",
- "三月",
- "四月",
- "五月",
- "六月",
- "七月",
- "八月",
- "九月",
- "十月",
- "十一月",
- "十二月");
+("дёЂжњ€",
+ "дєЊжњ€",
+ "дё‰жњ€",
+ "е››жњ€",
+ "дє”жњ€",
+ "е…­жњ€",
+ "дёѓжњ€",
+ "е…«жњ€",
+ "д№ќжњ€",
+ "еЌЃжњ€",
+ "еЌЃдёЂжњ€",
+ "еЌЃдєЊжњ€");
 
 // short month names
 Calendar._SMN = new Array
-("一月",
- "二月",
- "三月",
- "四月",
- "五月",
- "六月",
- "七月",
- "八月",
- "九月",
- "十月",
- "十一月",
- "十二月");
+("дёЂжњ€",
+ "дєЊжњ€",
+ "дё‰жњ€",
+ "е››жњ€",
+ "дє”жњ€",
+ "е…­жњ€",
+ "дёѓжњ€",
+ "е…«жњ€",
+ "д№ќжњ€",
+ "еЌЃжњ€",
+ "еЌЃдёЂжњ€",
+ "еЌЃдєЊжњ€");
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "關於";
+Calendar._TT["INFO"] = "й—њж–ј";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
@@ -87,41 +87,41 @@ Calendar._TT["ABOUT"] =
 "For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
 "Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
 "\n\n" +
-"日期選擇方法:\n" +
-"- 使用 \xab, \xbb 按鈕可選擇年份\n" +
-"- 使用 " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " 按鈕可選擇月份\n" +
-"- 按住上面的按鈕可以加快選取";
+"ж—ҐжњџйЃёж“‡ж–№жі•:\n" +
+"- дЅїз”Ё \xab, \xbb жЊ‰й€•еЏЇйЃёж“‡е№ґд»Ѕ\n" +
+"- дЅїз”Ё " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " жЊ‰й€•еЏЇйЃёж“‡жњ€д»Ѕ\n" +
+"- жЊ‰дЅЏдёЉйќўзљ„жЊ‰й€•еЏЇд»ҐеЉ еї«йЃёеЏ–";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
-"時間選擇方法:\n" +
-"- 點擊任何的時間部份可增加其值\n" +
-"- 同時按Shift鍵再點擊可減少其值\n" +
-"- 點擊並拖曳可加快改變的值";
+"ж™‚й–“йЃёж“‡ж–№жі•:\n" +
+"- й»ћж“Љд»»дЅ•зљ„ж™‚й–“йѓЁд»ЅеЏЇеўћеЉ е…¶еЂј\n" +
+"- еђЊж™‚жЊ‰ShiftйЌµе†Ќй»ћж“ЉеЏЇжё›е°‘е…¶еЂј\n" +
+"- й»ћж“Љдё¦ж‹–ж›іеЏЇеЉ еї«ж”№и®Љзљ„еЂј";
 
-Calendar._TT["PREV_YEAR"] = "上一年 (按住選單)";
-Calendar._TT["PREV_MONTH"] = "下一年 (按住選單)";
-Calendar._TT["GO_TODAY"] = "到今日";
-Calendar._TT["NEXT_MONTH"] = "上一月 (按住選單)";
-Calendar._TT["NEXT_YEAR"] = "下一月 (按住選單)";
-Calendar._TT["SEL_DATE"] = "選擇日期";
-Calendar._TT["DRAG_TO_MOVE"] = "拖曳";
-Calendar._TT["PART_TODAY"] = " (今日)";
+Calendar._TT["PREV_YEAR"] = "дёЉдёЂе№ґ (жЊ‰дЅЏйЃёе–®)";
+Calendar._TT["PREV_MONTH"] = "дё‹дёЂе№ґ (жЊ‰дЅЏйЃёе–®)";
+Calendar._TT["GO_TODAY"] = "е€°д»Љж—Ґ";
+Calendar._TT["NEXT_MONTH"] = "дёЉдёЂжњ€ (жЊ‰дЅЏйЃёе–®)";
+Calendar._TT["NEXT_YEAR"] = "дё‹дёЂжњ€ (жЊ‰дЅЏйЃёе–®)";
+Calendar._TT["SEL_DATE"] = "йЃёж“‡ж—Ґжњџ";
+Calendar._TT["DRAG_TO_MOVE"] = "ж‹–ж›і";
+Calendar._TT["PART_TODAY"] = " (д»Љж—Ґ)";
 
 // the following is to inform that "%s" is to be the first day of week
 // %s will be replaced with the day name.
-Calendar._TT["DAY_FIRST"] = "將 %s 顯示在前";
+Calendar._TT["DAY_FIRST"] = "е°‡ %s йЎЇз¤єењЁе‰Ќ";
 
 // This may be locale-dependent.  It specifies the week-end days, as an array
 // of comma-separated numbers.  The numbers are from 0 to 6: 0 means Sunday, 1
 // means Monday, etc.
 Calendar._TT["WEEKEND"] = "0,6";
 
-Calendar._TT["CLOSE"] = "關閉";
-Calendar._TT["TODAY"] = "今日";
-Calendar._TT["TIME_PART"] = "點擊or拖曳可改變時間(同時按Shift為減)";
+Calendar._TT["CLOSE"] = "й—њй–‰";
+Calendar._TT["TODAY"] = "д»Љж—Ґ";
+Calendar._TT["TIME_PART"] = "й»ћж“Љorж‹–ж›іеЏЇж”№и®Љж™‚й–“(еђЊж™‚жЊ‰Shiftз‚єжё›)";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d";
 Calendar._TT["TT_DATE_FORMAT"] = "%a, %b %e";
 
-Calendar._TT["WK"] = "週";
+Calendar._TT["WK"] = "йЂ±";
 Calendar._TT["TIME"] = "Time:";

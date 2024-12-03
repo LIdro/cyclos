@@ -15,41 +15,41 @@
 Calendar._DN = new Array
 ("Pazar",
  "Pazartesi",
- "Salı",
- "Çarşamba",
- "Perşembe",
+ "SalÑ",
+ "Ğ—arÑamba",
+ "PerÑembe",
  "Cuma",
  "Cumartesi",
  "Pazar");
 Calendar._MN = new Array
 ("Ocak",
- "Şubat",
+ "Ğ®ubat",
  "Mart",
  "Nisan",
- "Mayıs",
+ "MayÑs",
  "Haziran",
  "Temmuz",
- "Ağustos",
- "Eylül",
+ "AÑ€ustos",
+ "EylÑŒl",
  "Ekim",
- "Kasım",
- "Aralık");
+ "KasÑm",
+ "AralÑk");
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["TOGGLE"] = "Haftanın ilk gününü kaydır";
-Calendar._TT["PREV_YEAR"] = "Önceki Yıl (Menü için basılı tutunuz)";
-Calendar._TT["PREV_MONTH"] = "Önceki Ay (Menü için basılı tutunuz)";
-Calendar._TT["GO_TODAY"] = "Bugün'e git";
-Calendar._TT["NEXT_MONTH"] = "Sonraki Ay (Menü için basılı tutunuz)";
-Calendar._TT["NEXT_YEAR"] = "Sonraki Yıl (Menü için basılı tutunuz)";
-Calendar._TT["SEL_DATE"] = "Tarih seçiniz";
-Calendar._TT["DRAG_TO_MOVE"] = "Taşımak için sürükleyiniz";
-Calendar._TT["PART_TODAY"] = " (bugün)";
-Calendar._TT["MON_FIRST"] = "Takvim Pazartesi gününden başlasın";
-Calendar._TT["SUN_FIRST"] = "Takvim Pazar gününden başlasın";
+Calendar._TT["TOGGLE"] = "HaftanÑn ilk gÑŒnÑŒnÑŒ kaydÑr";
+Calendar._TT["PREV_YEAR"] = "Ğ¦nceki YÑl (MenÑŒ iĞ·in basÑlÑ tutunuz)";
+Calendar._TT["PREV_MONTH"] = "Ğ¦nceki Ay (MenÑŒ iĞ·in basÑlÑ tutunuz)";
+Calendar._TT["GO_TODAY"] = "BugÑŒn'e git";
+Calendar._TT["NEXT_MONTH"] = "Sonraki Ay (MenÑŒ iĞ·in basÑlÑ tutunuz)";
+Calendar._TT["NEXT_YEAR"] = "Sonraki YÑl (MenÑŒ iĞ·in basÑlÑ tutunuz)";
+Calendar._TT["SEL_DATE"] = "Tarih seĞ·iniz";
+Calendar._TT["DRAG_TO_MOVE"] = "TaÑÑmak iĞ·in sÑŒrÑŒkleyiniz";
+Calendar._TT["PART_TODAY"] = " (bugÑŒn)";
+Calendar._TT["MON_FIRST"] = "Takvim Pazartesi gÑŒnÑŒnden baÑlasÑn";
+Calendar._TT["SUN_FIRST"] = "Takvim Pazar gÑŒnÑŒnden baÑlasÑn";
 Calendar._TT["CLOSE"] = "Kapat";
-Calendar._TT["TODAY"] = "Bugün";
+Calendar._TT["TODAY"] = "BugÑŒn";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "dd-mm-y";

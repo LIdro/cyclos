@@ -4,16 +4,16 @@
 // January, 2004
 // Encoding: UTF-8
 Calendar._DN = new Array
-("Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
+("Niedziela", "PoniedziaЕ‚ek", "Wtorek", "Ељroda", "Czwartek", "PiД…tek", "Sobota", "Niedziela");
 
 Calendar._SDN = new Array
-("N", "Pn", "Wt", "Śr", "Cz", "Pt", "So", "N");
+("N", "Pn", "Wt", "Ељr", "Cz", "Pt", "So", "N");
 
 Calendar._MN = new Array
-("Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień");
+("StyczeЕ„", "Luty", "Marzec", "KwiecieЕ„", "Maj", "Czerwiec", "Lipiec", "SierpieЕ„", "WrzesieЕ„", "PaЕєdziernik", "Listopad", "GrudzieЕ„");
 
 Calendar._SMN = new Array
-("Sty", "Lut", "Mar", "Kwi", "Maj", "Cze", "Lip", "Sie", "Wrz", "Paź", "Lis", "Gru");
+("Sty", "Lut", "Mar", "Kwi", "Maj", "Cze", "Lip", "Sie", "Wrz", "PaЕє", "Lis", "Gru");
 
 // tooltips
 Calendar._TT = {};
@@ -25,29 +25,29 @@ Calendar._TT["ABOUT"] =
 "For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
 "Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
 "\n\n" +
-"Wybór daty:\n" +
-"- aby wybrać rok użyj przycisków \xab, \xbb\n" +
-"- aby wybrać miesiąc użyj przycisków " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + "\n" +
-"- aby przyspieszyć wybór przytrzymaj wciśnięty przycisk myszy nad ww. przyciskami.";
+"WybГіr daty:\n" +
+"- aby wybraД‡ rok uЕјyj przyciskГіw \xab, \xbb\n" +
+"- aby wybraД‡ miesiД…c uЕјyj przyciskГіw " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + "\n" +
+"- aby przyspieszyД‡ wybГіr przytrzymaj wciЕ›niД™ty przycisk myszy nad ww. przyciskami.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
-"Wybór czasu:\n" +
-"- aby zwiększyć wartość kliknij na dowolnym elemencie selekcji czasu\n" +
-"- aby zmniejszyć wartość użyj dodatkowo klawisza Shift\n" +
-"- możesz również poruszać myszkę w lewo i prawo wraz z wciśniętym lewym klawiszem.";
+"WybГіr czasu:\n" +
+"- aby zwiД™kszyД‡ wartoЕ›Д‡ kliknij na dowolnym elemencie selekcji czasu\n" +
+"- aby zmniejszyД‡ wartoЕ›Д‡ uЕјyj dodatkowo klawisza Shift\n" +
+"- moЕјesz rГіwnieЕј poruszaД‡ myszkД™ w lewo i prawo wraz z wciЕ›niД™tym lewym klawiszem.";
 
 Calendar._TT["PREV_YEAR"] = "Poprz. rok (przytrzymaj dla menu)";
-Calendar._TT["PREV_MONTH"] = "Poprz. miesiąc (przytrzymaj dla menu)";
-Calendar._TT["GO_TODAY"] = "Pokaż dziś";
-Calendar._TT["NEXT_MONTH"] = "Nast. miesiąc (przytrzymaj dla menu)";
+Calendar._TT["PREV_MONTH"] = "Poprz. miesiД…c (przytrzymaj dla menu)";
+Calendar._TT["GO_TODAY"] = "PokaЕј dziЕ›";
+Calendar._TT["NEXT_MONTH"] = "Nast. miesiД…c (przytrzymaj dla menu)";
 Calendar._TT["NEXT_YEAR"] = "Nast. rok (przytrzymaj dla menu)";
-Calendar._TT["SEL_DATE"] = "Wybierz datę";
-Calendar._TT["DRAG_TO_MOVE"] = "Przesuń okienko";
-Calendar._TT["PART_TODAY"] = " (dziś)";
-Calendar._TT["MON_FIRST"] = "Pokaż Poniedziałek jako pierwszy";
-Calendar._TT["SUN_FIRST"] = "Pokaż Niedzielę jako pierwszą";
+Calendar._TT["SEL_DATE"] = "Wybierz datД™";
+Calendar._TT["DRAG_TO_MOVE"] = "PrzesuЕ„ okienko";
+Calendar._TT["PART_TODAY"] = " (dziЕ›)";
+Calendar._TT["MON_FIRST"] = "PokaЕј PoniedziaЕ‚ek jako pierwszy";
+Calendar._TT["SUN_FIRST"] = "PokaЕј NiedzielД™ jako pierwszД…";
 Calendar._TT["CLOSE"] = "Zamknij";
-Calendar._TT["TODAY"] = "Dziś";
-Calendar._TT["TIME_PART"] = "(Shift-)klik | drag, aby zmienić wartość";
+Calendar._TT["TODAY"] = "DziЕ›";
+Calendar._TT["TIME_PART"] = "(Shift-)klik | drag, aby zmieniД‡ wartoЕ›Д‡";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "%Y.%m.%d";

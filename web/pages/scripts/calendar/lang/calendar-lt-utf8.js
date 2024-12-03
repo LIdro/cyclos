@@ -14,10 +14,10 @@ Calendar._DN = new Array
 ("Sekmadienis",
  "Pirmadienis",
  "Antradienis",
- "Trečiadienis",
+ "TreДЌiadienis",
  "Ketvirtadienis",
  "Pentadienis",
- "Šeštadienis",
+ "Е eЕЎtadienis",
  "Sekmadienis");
 
 // Please note that the following array of short day names (and the same goes
@@ -40,7 +40,7 @@ Calendar._SDN = new Array
  "Tre",
  "Ket",
  "Pen",
- "Šeš",
+ "Е eЕЎ",
  "Sek");
 
 // full month names
@@ -49,11 +49,11 @@ Calendar._MN = new Array
  "Vasaris",
  "Kovas",
  "Balandis",
- "Gegužė",
- "Birželis",
+ "GeguЕѕД—",
+ "BirЕѕelis",
  "Liepa",
- "Rugpjūtis",
- "Rugsėjis",
+ "RugpjЕ«tis",
+ "RugsД—jis",
  "Spalis",
  "Lapkritis",
  "Gruodis");
@@ -75,36 +75,36 @@ Calendar._SMN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "Apie kalendorių";
+Calendar._TT["INFO"] = "Apie kalendoriЕі";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
 "(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" + // don't translate this this ;-)
-"Naujausią versiją rasite: http://www.dynarch.com/projects/calendar/\n" +
-"Platinamas pagal GNU LGPL licenciją. Aplankykite http://gnu.org/licenses/lgpl.html" +
+"NaujausiД… versijД… rasite: http://www.dynarch.com/projects/calendar/\n" +
+"Platinamas pagal GNU LGPL licencijД…. Aplankykite http://gnu.org/licenses/lgpl.html" +
 "\n\n" +
 "Datos pasirinkimas:\n" +
-"- Metų pasirinkimas: \xab, \xbb\n" +
-"- Mėnesio pasirinkimas: " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + "\n" +
-"- Nuspauskite ir laikykite pelės klavišą greitesniam pasirinkimui.";
+"- MetЕі pasirinkimas: \xab, \xbb\n" +
+"- MД—nesio pasirinkimas: " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + "\n" +
+"- Nuspauskite ir laikykite pelД—s klaviЕЎД… greitesniam pasirinkimui.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
 "Laiko pasirinkimas:\n" +
-"- Spustelkite ant valandų arba minučių - skaičius padidės vienetu.\n" +
-"- Jei spausite kartu su Shift, skaičius sumažės.\n" +
-"- Greitam pasirinkimui spustelkite ir pajudinkite pelę.";
+"- Spustelkite ant valandЕі arba minuДЌiЕі - skaiДЌius padidД—s vienetu.\n" +
+"- Jei spausite kartu su Shift, skaiДЌius sumaЕѕД—s.\n" +
+"- Greitam pasirinkimui spustelkite ir pajudinkite pelД™.";
 
 Calendar._TT["PREV_YEAR"] = "Ankstesni metai (laikykite, jei norite meniu)";
-Calendar._TT["PREV_MONTH"] = "Ankstesnis mėnuo (laikykite, jei norite meniu)";
-Calendar._TT["GO_TODAY"] = "Pasirinkti šiandieną";
-Calendar._TT["NEXT_MONTH"] = "Kitas mėnuo (laikykite, jei norite meniu)";
+Calendar._TT["PREV_MONTH"] = "Ankstesnis mД—nuo (laikykite, jei norite meniu)";
+Calendar._TT["GO_TODAY"] = "Pasirinkti ЕЎiandienД…";
+Calendar._TT["NEXT_MONTH"] = "Kitas mД—nuo (laikykite, jei norite meniu)";
 Calendar._TT["NEXT_YEAR"] = "Kiti metai (laikykite, jei norite meniu)";
-Calendar._TT["SEL_DATE"] = "Pasirinkite datą";
+Calendar._TT["SEL_DATE"] = "Pasirinkite datД…";
 Calendar._TT["DRAG_TO_MOVE"] = "Tempkite";
-Calendar._TT["PART_TODAY"] = " (šiandien)";
-Calendar._TT["MON_FIRST"] = "Pirma savaitės diena - pirmadienis";
-Calendar._TT["SUN_FIRST"] = "Pirma savaitės diena - sekmadienis";
-Calendar._TT["CLOSE"] = "Uždaryti";
-Calendar._TT["TODAY"] = "Šiandien";
+Calendar._TT["PART_TODAY"] = " (ЕЎiandien)";
+Calendar._TT["MON_FIRST"] = "Pirma savaitД—s diena - pirmadienis";
+Calendar._TT["SUN_FIRST"] = "Pirma savaitД—s diena - sekmadienis";
+Calendar._TT["CLOSE"] = "UЕѕdaryti";
+Calendar._TT["TODAY"] = "Е iandien";
 Calendar._TT["TIME_PART"] = "Spustelkite arba tempkite jei norite pakeisti";
 
 // date formats

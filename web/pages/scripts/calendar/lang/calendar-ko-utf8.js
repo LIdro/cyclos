@@ -14,14 +14,14 @@
 // full day names
 
 Calendar._DN = new Array
-("일요일",
- "월요일",
- "화요일",
- "수요일",
- "목요일",
- "금요일",
- "토요일",
- "일요일");
+("мќјмљ”мќј",
+ "м›”мљ”мќј",
+ "н™”мљ”мќј",
+ "м€мљ”мќј",
+ "лЄ©мљ”мќј",
+ "кё€мљ”мќј",
+ "н† мљ”мќј",
+ "мќјмљ”мќј");
 
 // Please note that the following array of short day names (and the same goes
 // for short month names, _SMN) isn't absolutely necessary.  We give it here
@@ -37,29 +37,29 @@ Calendar._DN = new Array
 
 // short day names
 Calendar._SDN = new Array
-("일",
- "월",
- "화",
- "수",
- "목",
- "금",
- "토",
- "일");
+("мќј",
+ "м›”",
+ "н™”",
+ "м€",
+ "лЄ©",
+ "кё€",
+ "н† ",
+ "мќј");
 
 // full month names
 Calendar._MN = new Array
-("1월",
- "2월",
- "3월",
- "4월",
- "5월",
- "6월",
- "7월",
- "8월",
- "9월",
- "10월",
- "11월",
- "12월");
+("1м›”",
+ "2м›”",
+ "3м›”",
+ "4м›”",
+ "5м›”",
+ "6м›”",
+ "7м›”",
+ "8м›”",
+ "9м›”",
+ "10м›”",
+ "11м›”",
+ "12м›”");
 
 // short month names
 Calendar._SMN = new Array
@@ -78,43 +78,43 @@ Calendar._SMN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "calendar 에 대해서";
+Calendar._TT["INFO"] = "calendar м—ђ лЊЂн•ґм„њ";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
 "(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" + // don't translate this this ;-)
 "\n"+
-"최신 버전을 받으시려면 http://www.dynarch.com/projects/calendar/ 에 방문하세요\n" +
+"мµњм‹  лІ„м „мќ„ л°›мњјм‹њл ¤л©ґ http://www.dynarch.com/projects/calendar/ м—ђ л°©л¬ён•м„ёмљ”\n" +
 "\n"+
-"GNU LGPL 라이센스로 배포됩니다. \n"+
-"라이센스에 대한 자세한 내용은 http://gnu.org/licenses/lgpl.html 을 읽으세요." +
+"GNU LGPL лќјмќґм„јмЉ¤лЎњ л°°нЏ¬лђ©л‹€л‹¤. \n"+
+"лќјмќґм„јмЉ¤м—ђ лЊЂн•њ мћђм„ён•њ л‚ґмљ©мќЂ http://gnu.org/licenses/lgpl.html мќ„ мќЅмњјм„ёмљ”." +
 "\n\n" +
-"날짜 선택:\n" +
-"- 연도를 선택하려면 \xab, \xbb 버튼을 사용합니다\n" +
-"- 달을 선택하려면 " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " 버튼을 누르세요\n" +
-"- 계속 누르고 있으면 위 값들을 빠르게 선택하실 수 있습니다.";
+"л‚ м§њ м„ нѓќ:\n" +
+"- м—°лЏ„лҐј м„ нѓќн•л ¤л©ґ \xab, \xbb лІ„нЉјмќ„ м‚¬мљ©н•©л‹€л‹¤\n" +
+"- л‹¬мќ„ м„ нѓќн•л ¤л©ґ " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " лІ„нЉјмќ„ л€„лҐґм„ёмљ”\n" +
+"- кі„м†Ќ л€„лҐґкі  мћ€мњјл©ґ мњ„ к°’л“¤мќ„ л№ лҐґкІЊ м„ нѓќн•м‹¤ м€ мћ€мЉµл‹€л‹¤.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
-"시간 선택:\n" +
-"- 마우스로 누르면 시간이 증가합니다\n" +
-"- Shift 키와 함께 누르면 감소합니다\n" +
-"- 누른 상태에서 마우스를 움직이면 좀 더 빠르게 값이 변합니다.\n";
+"м‹њк°„ м„ нѓќ:\n" +
+"- л§€мљ°мЉ¤лЎњ л€„лҐґл©ґ м‹њк°„мќґ м¦ќк°Ђн•©л‹€л‹¤\n" +
+"- Shift н‚¤м™Ђ н•Ёк» л€„лҐґл©ґ к°ђм†Њн•©л‹€л‹¤\n" +
+"- л€„лҐё мѓЃнѓњм—ђм„њ л§€мљ°мЉ¤лҐј м›Ђм§Ѓмќґл©ґ мўЂ лЌ” л№ лҐґкІЊ к°’мќґ ліЂн•©л‹€л‹¤.\n";
 
-Calendar._TT["PREV_YEAR"] = "지난 해 (길게 누르면 목록)";
-Calendar._TT["PREV_MONTH"] = "지난 달 (길게 누르면 목록)";
-Calendar._TT["GO_TODAY"] = "오늘 날짜로";
-Calendar._TT["NEXT_MONTH"] = "다음 달 (길게 누르면 목록)";
-Calendar._TT["NEXT_YEAR"] = "다음 해 (길게 누르면 목록)";
-Calendar._TT["SEL_DATE"] = "날짜를 선택하세요";
-Calendar._TT["DRAG_TO_MOVE"] = "마우스 드래그로 이동 하세요";
-Calendar._TT["PART_TODAY"] = " (오늘)";
-Calendar._TT["MON_FIRST"] = "월요일을 한 주의 시작 요일로";
-Calendar._TT["SUN_FIRST"] = "일요일을 한 주의 시작 요일로";
-Calendar._TT["CLOSE"] = "닫기";
-Calendar._TT["TODAY"] = "오늘";
-Calendar._TT["TIME_PART"] = "(Shift-)클릭 또는 드래그 하세요";
+Calendar._TT["PREV_YEAR"] = "м§Ђл‚њ н•ґ (кёёкІЊ л€„лҐґл©ґ лЄ©лЎќ)";
+Calendar._TT["PREV_MONTH"] = "м§Ђл‚њ л‹¬ (кёёкІЊ л€„лҐґл©ґ лЄ©лЎќ)";
+Calendar._TT["GO_TODAY"] = "м¤лЉ л‚ м§њлЎњ";
+Calendar._TT["NEXT_MONTH"] = "л‹¤мќЊ л‹¬ (кёёкІЊ л€„лҐґл©ґ лЄ©лЎќ)";
+Calendar._TT["NEXT_YEAR"] = "л‹¤мќЊ н•ґ (кёёкІЊ л€„лҐґл©ґ лЄ©лЎќ)";
+Calendar._TT["SEL_DATE"] = "л‚ м§њлҐј м„ нѓќн•м„ёмљ”";
+Calendar._TT["DRAG_TO_MOVE"] = "л§€мљ°мЉ¤ л“њлћк·ёлЎњ мќґлЏ™ н•м„ёмљ”";
+Calendar._TT["PART_TODAY"] = " (м¤лЉ)";
+Calendar._TT["MON_FIRST"] = "м›”мљ”мќјмќ„ н•њ мЈјмќ м‹њмћ‘ мљ”мќјлЎњ";
+Calendar._TT["SUN_FIRST"] = "мќјмљ”мќјмќ„ н•њ мЈјмќ м‹њмћ‘ мљ”мќјлЎњ";
+Calendar._TT["CLOSE"] = "л‹«кё°";
+Calendar._TT["TODAY"] = "м¤лЉ";
+Calendar._TT["TIME_PART"] = "(Shift-)нЃґл¦­ лђлЉ” л“њлћк·ё н•м„ёмљ”";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "%Y-%m-%d";
 Calendar._TT["TT_DATE_FORMAT"] = "%b/%e [%a]";
 
-Calendar._TT["WK"] = "주";
+Calendar._TT["WK"] = "мЈј";

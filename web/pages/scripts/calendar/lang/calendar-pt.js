@@ -13,7 +13,7 @@
 Calendar._DN = new Array
 ("Domingo",
  "Segunda",
- "TerÁa",
+ "Ter–∑a",
  "Quarta",
  "Quinta",
  "Sexta",
@@ -47,7 +47,7 @@ Calendar._SDN = new Array
 Calendar._MN = new Array
 ("Janeiro",
  "Fevereiro",
- "MarÁo",
+ "Mar–∑o",
  "Abril",
  "Maio",
  "Junho",
@@ -75,7 +75,7 @@ Calendar._SMN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "Sobre o calend·rio";
+Calendar._TT["INFO"] = "Sobre o calend–±rio";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +

@@ -8,14 +8,14 @@ Calendar._DN = new Array
  "Ponedjeljak",
  "Utorak",
  "Srijeda",
- "Četvrtak",
+ "ДЊetvrtak",
  "Petak",
  "Subota",
  "Nedjelja");
 Calendar._MN = new Array
-("Siječanj",
- "Veljača",
- "Ožujak",
+("SijeДЌanj",
+ "VeljaДЌa",
+ "OЕѕujak",
  "Travanj",
  "Svibanj",
  "Lipanj",
@@ -28,17 +28,17 @@ Calendar._MN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["TOGGLE"] = "Promjeni dan s kojim počinje tjedan";
+Calendar._TT["TOGGLE"] = "Promjeni dan s kojim poДЌinje tjedan";
 Calendar._TT["PREV_YEAR"] = "Prethodna godina (dugi pritisak za meni)";
 Calendar._TT["PREV_MONTH"] = "Prethodni mjesec (dugi pritisak za meni)";
-Calendar._TT["GO_TODAY"] = "Idi na tekući dan";
-Calendar._TT["NEXT_MONTH"] = "Slijedeći mjesec (dugi pritisak za meni)";
-Calendar._TT["NEXT_YEAR"] = "Slijedeća godina (dugi pritisak za meni)";
+Calendar._TT["GO_TODAY"] = "Idi na tekuД‡i dan";
+Calendar._TT["NEXT_MONTH"] = "SlijedeД‡i mjesec (dugi pritisak za meni)";
+Calendar._TT["NEXT_YEAR"] = "SlijedeД‡a godina (dugi pritisak za meni)";
 Calendar._TT["SEL_DATE"] = "Izaberite datum";
 Calendar._TT["DRAG_TO_MOVE"] = "Pritisni i povuci za promjenu pozicije";
 Calendar._TT["PART_TODAY"] = " (today)";
-Calendar._TT["MON_FIRST"] = "Prikaži ponedjeljak kao prvi dan";
-Calendar._TT["SUN_FIRST"] = "Prikaži nedjelju kao prvi dan";
+Calendar._TT["MON_FIRST"] = "PrikaЕѕi ponedjeljak kao prvi dan";
+Calendar._TT["SUN_FIRST"] = "PrikaЕѕi nedjelju kao prvi dan";
 Calendar._TT["CLOSE"] = "Zatvori";
 Calendar._TT["TODAY"] = "Danas";
 

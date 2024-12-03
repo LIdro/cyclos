@@ -1,7 +1,7 @@
-﻿// ** I18N
+п»ї// ** I18N
 
 // Calendar FI language (Finnish, Suomi)
-// Author: Jarno Käyhkö, <gambler@phnet.fi>
+// Author: Jarno KГ¤yhkГ¶, <gambler@phnet.fi>
 // Encoding: UTF-8
 // Distributed under the same terms as the calendar itself.
 
@@ -34,8 +34,8 @@ Calendar._MN = new Array
  "Maaliskuu",
  "Huhtikuu",
  "Toukokuu",
- "Kesäkuu",
- "Heinäkuu",
+ "KesГ¤kuu",
+ "HeinГ¤kuu",
  "Elokuu",
  "Syyskuu",
  "Lokakuu",
@@ -65,30 +65,30 @@ Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
 "(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" + // don't translate this this ;-)
 "Uusin versio osoitteessa: http://www.dynarch.com/projects/calendar/\n" +
-"Julkaistu GNU LGPL lisenssin alaisuudessa. Lisätietoja osoitteessa http://gnu.org/licenses/lgpl.html" +
+"Julkaistu GNU LGPL lisenssin alaisuudessa. LisГ¤tietoja osoitteessa http://gnu.org/licenses/lgpl.html" +
 "\n\n" +
-"Päivämäärä valinta:\n" +
-"- Käytä \xab, \xbb painikkeita valitaksesi vuosi\n" +
-"- Käytä " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " painikkeita valitaksesi kuukausi\n" +
-"- Pitämällä hiiren painiketta minkä tahansa yllä olevan painikkeen kohdalla, saat näkyviin valikon nopeampaan siirtymiseen.";
+"PГ¤ivГ¤mГ¤Г¤rГ¤ valinta:\n" +
+"- KГ¤ytГ¤ \xab, \xbb painikkeita valitaksesi vuosi\n" +
+"- KГ¤ytГ¤ " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + " painikkeita valitaksesi kuukausi\n" +
+"- PitГ¤mГ¤llГ¤ hiiren painiketta minkГ¤ tahansa yllГ¤ olevan painikkeen kohdalla, saat nГ¤kyviin valikon nopeampaan siirtymiseen.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
 "Ajan valinta:\n" +
-"- Klikkaa kellonajan numeroita lisätäksesi aikaa\n" +
-"- tai pitämällä Shift-näppäintä pohjassa saat aikaa taaksepäin\n" +
-"- tai klikkaa ja pidä hiiren painike pohjassa sekä liikuta hiirtä muuttaaksesi aikaa nopeasti eteen- ja taaksepäin.";
+"- Klikkaa kellonajan numeroita lisГ¤tГ¤ksesi aikaa\n" +
+"- tai pitГ¤mГ¤llГ¤ Shift-nГ¤ppГ¤intГ¤ pohjassa saat aikaa taaksepГ¤in\n" +
+"- tai klikkaa ja pidГ¤ hiiren painike pohjassa sekГ¤ liikuta hiirtГ¤ muuttaaksesi aikaa nopeasti eteen- ja taaksepГ¤in.";
 
-Calendar._TT["PREV_YEAR"] = "Edell. vuosi (paina hetki, näet valikon)";
-Calendar._TT["PREV_MONTH"] = "Edell. kuukausi (paina hetki, näet valikon)";
-Calendar._TT["GO_TODAY"] = "Siirry tähän päivään";
-Calendar._TT["NEXT_MONTH"] = "Seur. kuukausi (paina hetki, näet valikon)";
-Calendar._TT["NEXT_YEAR"] = "Seur. vuosi (paina hetki, näet valikon)";
-Calendar._TT["SEL_DATE"] = "Valitse päivämäärä";
-Calendar._TT["DRAG_TO_MOVE"] = "Siirrä kalenterin paikkaa";
-Calendar._TT["PART_TODAY"] = " (tänään)";
-Calendar._TT["MON_FIRST"] = "Näytä maanantai ensimmäisenä";
-Calendar._TT["SUN_FIRST"] = "Näytä sunnuntai ensimmäisenä";
+Calendar._TT["PREV_YEAR"] = "Edell. vuosi (paina hetki, nГ¤et valikon)";
+Calendar._TT["PREV_MONTH"] = "Edell. kuukausi (paina hetki, nГ¤et valikon)";
+Calendar._TT["GO_TODAY"] = "Siirry tГ¤hГ¤n pГ¤ivГ¤Г¤n";
+Calendar._TT["NEXT_MONTH"] = "Seur. kuukausi (paina hetki, nГ¤et valikon)";
+Calendar._TT["NEXT_YEAR"] = "Seur. vuosi (paina hetki, nГ¤et valikon)";
+Calendar._TT["SEL_DATE"] = "Valitse pГ¤ivГ¤mГ¤Г¤rГ¤";
+Calendar._TT["DRAG_TO_MOVE"] = "SiirrГ¤ kalenterin paikkaa";
+Calendar._TT["PART_TODAY"] = " (tГ¤nГ¤Г¤n)";
+Calendar._TT["MON_FIRST"] = "NГ¤ytГ¤ maanantai ensimmГ¤isenГ¤";
+Calendar._TT["SUN_FIRST"] = "NГ¤ytГ¤ sunnuntai ensimmГ¤isenГ¤";
 Calendar._TT["CLOSE"] = "Sulje";
-Calendar._TT["TODAY"] = "Tänään";
+Calendar._TT["TODAY"] = "TГ¤nГ¤Г¤n";
 Calendar._TT["TIME_PART"] = "(Shift-) Klikkaa tai liikuta muuttaaksesi aikaa";
 
 // date formats

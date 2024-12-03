@@ -11,14 +11,14 @@
 
 // full day names
 Calendar._DN = new Array
-("日",
- "月",
- "火",
- "水",
- "木",
- "金",
- "土",
- "日");
+("ж—Ґ",
+ "жњ€",
+ "зЃ«",
+ "ж°ґ",
+ "жњЁ",
+ "й‡‘",
+ "ењџ",
+ "ж—Ґ");
 
 // Please note that the following array of short day names (and the same goes
 // for short month names, _SMN) isn't absolutely necessary.  We give it here
@@ -41,18 +41,18 @@ Calendar._FD = 0;
 
 // full month names
 Calendar._MN = new Array
-("1月",
- "2月",
- "3月",
- "4月",
- "5月",
- "6月",
- "7月",
- "8月",
- "9月",
- "10月",
- "11月",
- "12月");
+("1жњ€",
+ "2жњ€",
+ "3жњ€",
+ "4жњ€",
+ "5жњ€",
+ "6жњ€",
+ "7жњ€",
+ "8жњ€",
+ "9жњ€",
+ "10жњ€",
+ "11жњ€",
+ "12жњ€");
 
 // short month names
 Calendar._SMN = Calendar._MN;
@@ -77,14 +77,14 @@ Calendar._TT["ABOUT_TIME"] = "\n\n" +
 "- or Shift-click to decrease it\n" +
 "- or click and drag for faster selection.";
 
-Calendar._TT["PREV_YEAR"] = "前年";
-Calendar._TT["PREV_MONTH"] = "前月";
-Calendar._TT["GO_TODAY"] = "今日";
-Calendar._TT["NEXT_MONTH"] = "翌月";
-Calendar._TT["NEXT_YEAR"] = "翌年";
-Calendar._TT["SEL_DATE"] = "日付選択";
-Calendar._TT["DRAG_TO_MOVE"] = "ウィンドウの移動";
-Calendar._TT["PART_TODAY"] = " (今日)";
+Calendar._TT["PREV_YEAR"] = "е‰Ќе№ґ";
+Calendar._TT["PREV_MONTH"] = "е‰Ќжњ€";
+Calendar._TT["GO_TODAY"] = "д»Љж—Ґ";
+Calendar._TT["NEXT_MONTH"] = "зїЊжњ€";
+Calendar._TT["NEXT_YEAR"] = "зїЊе№ґ";
+Calendar._TT["SEL_DATE"] = "ж—Ґд»йЃёжЉћ";
+Calendar._TT["DRAG_TO_MOVE"] = "г‚¦г‚Јгѓігѓ‰г‚¦гЃ®з§»е‹•";
+Calendar._TT["PART_TODAY"] = " (д»Љж—Ґ)";
 
 // the following is to inform that "%s" is to be the first day of week
 // %s will be replaced with the day name.
@@ -95,13 +95,13 @@ Calendar._TT["DAY_FIRST"] = "Display %s first";
 // means Monday, etc.
 Calendar._TT["WEEKEND"] = "0,6";
 
-Calendar._TT["CLOSE"] = "閉じる";
-Calendar._TT["TODAY"] = "今日";
+Calendar._TT["CLOSE"] = "й–‰гЃг‚‹";
+Calendar._TT["TODAY"] = "д»Љж—Ґ";
 Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "y-mm-dd";
-Calendar._TT["TT_DATE_FORMAT"] = "%m月 %d日 (%a)";
+Calendar._TT["TT_DATE_FORMAT"] = "%mжњ€ %dж—Ґ (%a)";
 
-Calendar._TT["WK"] = "週";
+Calendar._TT["WK"] = "йЂ±";
 Calendar._TT["TIME"] = "Time:";

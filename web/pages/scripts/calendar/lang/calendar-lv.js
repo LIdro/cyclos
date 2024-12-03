@@ -11,14 +11,14 @@
 
 // full day names
 Calendar._DN = new Array
-("Svçtdiena",
+("SvÐ·tdiena",
  "Pirmdiena",
  "Otrdiena",
- "Treðdiena",
+ "TreÑ€diena",
  "Ceturdiena",
  "Piektdiena",
  "Sestdiena",
- "Svçtdiena");
+ "SvÐ·tdiena");
 
 // Please note that the following array of short day names (and the same goes
 // for short month names, _SMN) isn't absolutely necessary.  We give it here
@@ -45,13 +45,13 @@ Calendar._SDN = new Array
 
 // full month names
 Calendar._MN = new Array
-("Janvâris",
- "Februâris",
+("JanvÐ²ris",
+ "FebruÐ²ris",
  "Marts",
- "Aprîlis",
+ "AprÐ¾lis",
  "Maijs",
- "Jûnijs",
- "Jûlijs",
+ "JÑ‹nijs",
+ "JÑ‹lijs",
  "Augusts",
  "Septembris",
  "Oktobris",
@@ -65,8 +65,8 @@ Calendar._SMN = new Array
  "Mar",
  "Apr",
  "Mai",
- "Jûn",
- "Jûl",
+ "JÑ‹n",
+ "JÑ‹l",
  "Aug",
  "Sep",
  "Okt",
@@ -75,7 +75,7 @@ Calendar._SMN = new Array
 
 // tooltips
 Calendar._TT = {};
-Calendar._TT["INFO"] = "Par kalendâru";
+Calendar._TT["INFO"] = "Par kalendÐ²ru";
 
 Calendar._TT["ABOUT"] =
 "DHTML Date/Time Selector\n" +
@@ -83,37 +83,37 @@ Calendar._TT["ABOUT"] =
 "For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
 "Distributed under GNU LGPL.  See http://gnu.org/licenses/lgpl.html for details." +
 "\n\n" +
-"Datuma izvçle:\n" +
-"- Izmanto \xab, \xbb pogas, lai izvçlçtos gadu\n" +
-"- Izmanto " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + "pogas, lai izvçlçtos mçnesi\n" +
-"- Turi nospiestu peles pogu uz jebkuru no augstâk minçtajâm pogâm, lai paâtrinâtu izvçli.";
+"Datuma izvÐ·le:\n" +
+"- Izmanto \xab, \xbb pogas, lai izvÐ·lÐ·tos gadu\n" +
+"- Izmanto " + String.fromCharCode(0x2039) + ", " + String.fromCharCode(0x203a) + "pogas, lai izvÐ·lÐ·tos mÐ·nesi\n" +
+"- Turi nospiestu peles pogu uz jebkuru no augstÐ²k minÐ·tajÐ²m pogÐ²m, lai paÐ²trinÐ²tu izvÐ·li.";
 Calendar._TT["ABOUT_TIME"] = "\n\n" +
-"Laika izvçle:\n" +
-"- Uzklikðíini uz jebkuru no laika daïâm, lai palielinâtu to\n" +
-"- vai Shift-klikðíis, lai samazinâtu to\n" +
-"- vai noklikðíini un velc uz attiecîgo virzienu lai mainîtu âtrâk.";
+"Laika izvÐ·le:\n" +
+"- UzklikÑ€Ð½ini uz jebkuru no laika daÐ¿Ð²m, lai palielinÐ²tu to\n" +
+"- vai Shift-klikÑ€Ð½is, lai samazinÐ²tu to\n" +
+"- vai noklikÑ€Ð½ini un velc uz attiecÐ¾go virzienu lai mainÐ¾tu Ð²trÐ²k.";
 
-Calendar._TT["PREV_YEAR"] = "Iepr. gads (turi izvçlnei)";
-Calendar._TT["PREV_MONTH"] = "Iepr. mçnesis (turi izvçlnei)";
-Calendar._TT["GO_TODAY"] = "Ðodien";
-Calendar._TT["NEXT_MONTH"] = "Nâkoðais mçnesis (turi izvçlnei)";
-Calendar._TT["NEXT_YEAR"] = "Nâkoðais gads (turi izvçlnei)";
-Calendar._TT["SEL_DATE"] = "Izvçlies datumu";
-Calendar._TT["DRAG_TO_MOVE"] = "Velc, lai pârvietotu";
-Calendar._TT["PART_TODAY"] = " (ðodien)";
+Calendar._TT["PREV_YEAR"] = "Iepr. gads (turi izvÐ·lnei)";
+Calendar._TT["PREV_MONTH"] = "Iepr. mÐ·nesis (turi izvÐ·lnei)";
+Calendar._TT["GO_TODAY"] = "Ð odien";
+Calendar._TT["NEXT_MONTH"] = "NÐ²koÑ€ais mÐ·nesis (turi izvÐ·lnei)";
+Calendar._TT["NEXT_YEAR"] = "NÐ²koÑ€ais gads (turi izvÐ·lnei)";
+Calendar._TT["SEL_DATE"] = "IzvÐ·lies datumu";
+Calendar._TT["DRAG_TO_MOVE"] = "Velc, lai pÐ²rvietotu";
+Calendar._TT["PART_TODAY"] = " (Ñ€odien)";
 
 // the following is to inform that "%s" is to be the first day of week
 // %s will be replaced with the day name.
-Calendar._TT["DAY_FIRST"] = "Attçlot %s kâ pirmo";
+Calendar._TT["DAY_FIRST"] = "AttÐ·lot %s kÐ² pirmo";
 
 // This may be locale-dependent.  It specifies the week-end days, as an array
 // of comma-separated numbers.  The numbers are from 0 to 6: 0 means Sunday, 1
 // means Monday, etc.
 Calendar._TT["WEEKEND"] = "1,7";
 
-Calendar._TT["CLOSE"] = "Aizvçrt";
-Calendar._TT["TODAY"] = "Ðodien";
-Calendar._TT["TIME_PART"] = "(Shift-)Klikðíis vai pârvieto, lai mainîtu";
+Calendar._TT["CLOSE"] = "AizvÐ·rt";
+Calendar._TT["TODAY"] = "Ð odien";
+Calendar._TT["TIME_PART"] = "(Shift-)KlikÑ€Ð½is vai pÐ²rvieto, lai mainÐ¾tu";
 
 // date formats
 Calendar._TT["DEF_DATE_FORMAT"] = "%d-%m-%Y";
