@@ -9,16 +9,21 @@ RUN java -version && \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     postgresql-client \
+    wget \
     && rm -rf /var/lib/apt/lists/*
 
 # Remove default webapps
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Add JAXB dependencies
-ADD https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar /usr/local/tomcat/lib/
-ADD https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar /usr/local/tomcat/lib/
-ADD https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar /usr/local/tomcat/lib/
-ADD https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar /usr/local/tomcat/lib/
+# Download JAXB dependencies with retry mechanism
+RUN mkdir -p /usr/local/tomcat/lib && \
+    for i in {1..3}; do \
+        wget -O /usr/local/tomcat/lib/jaxb-api-2.3.1.jar https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar && \
+        wget -O /usr/local/tomcat/lib/jaxb-core-2.3.0.1.jar https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar && \
+        wget -O /usr/local/tomcat/lib/jaxb-impl-2.3.1.jar https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar && \
+        wget -O /usr/local/tomcat/lib/activation-1.1.1.jar https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar && \
+        break || sleep 5; \
+    done
 
 # Set permissions for JAXB libraries
 RUN chmod 644 /usr/local/tomcat/lib/*.jar
@@ -38,11 +43,14 @@ COPY db/*.sql /usr/local/tomcat/db/
 # Stage 2: Create the runtime environment
 FROM tomcat:9.0-jdk11-openjdk-slim
 
-# Install required packages
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    postgresql-client \
-    && rm -rf /var/lib/apt/lists/*
+# Install required packages with retry mechanism
+RUN for i in {1..3}; do \
+        apt-get update && \
+        apt-get install -y --no-install-recommends \
+        postgresql-client && \
+        rm -rf /var/lib/apt/lists/* && \
+        break || sleep 5; \
+    done
 
 # Remove default webapps and create necessary directories
 RUN rm -rf /usr/local/tomcat/webapps/* && \
@@ -57,11 +65,8 @@ RUN rm -rf /usr/local/tomcat/webapps/* && \
                  /usr/local/tomcat/cyclos \
                  /usr/local/tomcat/db
 
-# Add JAXB dependencies
-ADD https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar /usr/local/tomcat/lib/
-ADD https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar /usr/local/tomcat/lib/
-ADD https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar /usr/local/tomcat/lib/
-ADD https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar /usr/local/tomcat/lib/
+# Copy JAXB dependencies from builder
+COPY --from=builder /usr/local/tomcat/lib/*.jar /usr/local/tomcat/lib/
 
 # Set permissions for JAXB libraries
 RUN chmod 644 /usr/local/tomcat/lib/*.jar
@@ -78,5 +83,9 @@ ENV CATALINA_OPTS="-Xmx512m"
 WORKDIR /usr/local/tomcat
 
 EXPOSE 8080
+
+# Add healthcheck
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD wget --no-verbose --tries=1 --spider http://localhost:8080/ || exit 1
 
 CMD ["catalina.sh", "run"]
