@@ -1,0 +1,8 @@
+version: "1.0"
+services:
+  cyclos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
