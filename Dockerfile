@@ -23,25 +23,39 @@ ADD https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-
 # Set permissions for JAXB libraries
 RUN chmod 644 /usr/local/tomcat/lib/*.jar
 
-# Copy the WAR file to webapps directory
-COPY web /usr/local/tomcat/webapps/ROOT
+# Create necessary directories
+RUN mkdir -p /usr/local/tomcat/webapps/ROOT
+
+# Copy only necessary web files
+COPY web/WEB-INF /usr/local/tomcat/webapps/ROOT/WEB-INF/
+COPY web/pages /usr/local/tomcat/webapps/ROOT/pages/
+COPY web/style /usr/local/tomcat/webapps/ROOT/style/
+COPY web/*.* /usr/local/tomcat/webapps/ROOT/
 
 # Copy database configuration
-COPY db /usr/local/tomcat/db
+COPY db/*.sql /usr/local/tomcat/db/
 
 # Stage 2: Create the runtime environment
 FROM tomcat:9.0-jdk11-openjdk-slim
+
+# Install required packages
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
 
 # Remove default webapps and create necessary directories
 RUN rm -rf /usr/local/tomcat/webapps/* && \
     mkdir -p /usr/local/tomcat/temp \
             /usr/local/tomcat/work \
             /usr/local/tomcat/logs \
-            /usr/local/tomcat/cyclos && \
+            /usr/local/tomcat/cyclos \
+            /usr/local/tomcat/db && \
     chmod -R 777 /usr/local/tomcat/temp \
                  /usr/local/tomcat/work \
                  /usr/local/tomcat/logs \
-                 /usr/local/tomcat/cyclos
+                 /usr/local/tomcat/cyclos \
+                 /usr/local/tomcat/db
 
 # Add JAXB dependencies
 ADD https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar /usr/local/tomcat/lib/
@@ -50,19 +64,18 @@ ADD https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.
 ADD https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar /usr/local/tomcat/lib/
 
 # Set permissions for JAXB libraries
-RUN chmod 644 /usr/local/tomcat/lib/jaxb-api-2.3.1.jar \
-             /usr/local/tomcat/lib/jaxb-core-2.3.0.1.jar \
-             /usr/local/tomcat/lib/jaxb-impl-2.3.1.jar \
-             /usr/local/tomcat/lib/activation-1.1.1.jar
+RUN chmod 644 /usr/local/tomcat/lib/*.jar
 
 # Copy the pre-built application
 COPY --from=builder /usr/local/tomcat/webapps/ROOT /usr/local/tomcat/webapps/ROOT
 COPY --from=builder /usr/local/tomcat/db /usr/local/tomcat/db
-COPY --from=builder /usr/local/tomcat/lib/*.jar /usr/local/tomcat/lib/
 
 # Set environment variables
 ENV JAVA_OPTS="-Xmx512m -Djava.security.egd=file:/dev/./urandom"
 ENV CATALINA_OPTS="-Xmx512m"
+
+# Set working directory
+WORKDIR /usr/local/tomcat
 
 EXPOSE 8080
 

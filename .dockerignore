@@ -1,0 +1,9 @@
+.git
+.gitignore
+docs/
+src/
+ws/
+*.ps1
+*.tar.gz
+license.txt
+icons.licences.txt
